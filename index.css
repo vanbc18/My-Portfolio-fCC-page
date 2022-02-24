@@ -1,0 +1,189 @@
+:root {
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+}
+/*the HTML tags*/
+body {
+  text-align: center;
+  height: auto;
+  margin: 0; 
+  background-image: url("https://www.pixelstalk.net/wp-content/uploads/2016/11/Image-of-Calm.jpg");
+  background-attachment: fixed;
+}
+
+h1, h2 {
+  font-family: 'Zilla Slab Highlight', cursive;
+  font-size: 4em;
+  color: #851C0A;
+  padding-top: 2rem;
+}
+
+p {
+  text-align: center;
+}
+/*end of HTML tags*/
+
+/*start of the navigation bar part*/
+#navbar {
+  top: 0;
+  left: 0;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: 3.5rem;
+  justify-content: flex-end;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.8);
+  background-image: url("http://static.colourlovers.com/images/patterns/89/89366.png");
+  opacity: 0.97;
+  z-index: 2;
+}
+
+.nav-list {
+  top: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  margin: 0;
+  max-width: 100%;
+  height: auto;
+}
+
+.nav-list a {
+  font-family: 'Fredoka One', cursive;
+  font-size: 1.9em;
+  color: black;
+  display: in-line;
+  width: 85%;
+  height: auto;
+  padding: 0.6rem;
+  text-decoration: none;
+  background: rgba(255,255,255,0.7);
+  opacity: 0.9;
+  border-left: solid;
+}
+
+.nav-list a:hover {
+  background: rgba(79, 219, 170, 0.8);
+}
+/*end of nav bar part*/
+
+/*Start of welcome section*/
+#welcome-section {
+  height: 100vh;
+}
+
+.junior-dev {
+  font-family: 'Zilla Slab Highlight', cursive;
+  font-size: 3em;
+  color: #0B7D4E;
+  text-align: center;
+}
+/*end of welcome section*/
+
+/*start of FCC projects part*/
+.fcc {
+  font-family: 'Fredoka One', cursive;
+  font-size: 2em;
+  white-space: pre-line;
+}
+
+#projects {
+  font-family: 'Fredoka One', cursive;
+  z-index: 1;
+  font-size: 1.5em;
+  display: grid;
+  justify-content: center;
+}
+
+.project-tile {
+  width: 10em;
+  margin: 0;
+  animation-name: slide; 
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+.project-img {
+  width: 10rem;
+  height: 10rem;
+  border: 1px solid black;
+  border-radius: 4%;
+  background: white;
+  filter: drop-shadow(5px 5px 2px gray);
+}
+
+.projects-grid {
+  height: auto;
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  position: relative;
+  vertical-align: middle;
+}
+/*this is the @keyframes rule that animates the images opacity from 0% to 100%*/
+@keyframes slide {
+  0% {
+    right: 0px;
+    opacity: 0;
+  }
+  50% {
+    right: 50vw;
+    opacity: 0.5;
+  }
+  100% {
+    right: 100%;
+    opacity: 1;
+  }
+}
+/*End of FCC projects part*/
+
+/*start of footer part*/
+#footer {
+  font-family: 'Covered By Your Grace', cursive;
+  font-size: 1em;
+}
+
+#img-grid {
+  width: 100vw;
+  height: auto;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  position: relative;
+  justify-content: center;
+}
+
+.footer-img { 
+  width: 5rem;
+  min-width: 2vw;
+  max-width: 6rem;
+  height: auto;
+  margin: auto;
+  opacity: 0.9;
+}
+/*end of footer part*/
+
+/*The following part tells us how the navigation bar will be displayed on mobile screens*/
+@media (max-width: 480px) {
+#navbar {
+  height: 3rem;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ6ovW1jtINeNpwW3kY8vyQX8ItxQlqPAmdw&usqp=CAU");
+  filter: brightness(110%);
+  z-index: 2;
+}
+
+.nav-list a {
+  font-size: 1.3em;
+  display: in-line;
+  width: 85%;
+  opacity: 0.5;
+  border: 2px solid white;
+  border-collapse: collapse;
+}
+
+.nav-list a:hover {
+  opacity: 1;
+  height: 0.5rem;
+}
+}
+  
