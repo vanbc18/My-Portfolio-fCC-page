@@ -180,5 +180,75 @@ p {
   opacity: 1;
   height: 0.5rem;
 }
+  
+body {
+  text-align: center;
+  height: auto;
+  margin: 0; 
+  background-image: url("https://www.pixelstalk.net/wp-content/uploads/2016/11/Image-of-Calm.jpg");
+  background-attachment: fixed;
+}
+
+h1, h2 {
+  font-family: 'Zilla Slab Highlight', cursive;
+  font-size: 4em;
+  color: #851C0A;
+  padding-top: 2rem;
+}
+
+p {
+  text-align: center;
+}
+  
+#welcome-section {
+  height: 100vh;
+}
+
+.junior-dev {
+  font-family: 'Zilla Slab Highlight', cursive;
+  font-size: 3em;
+  color: #0B7D4E;
+  text-align: center;
+}
+  
+.fcc {
+  font-family: 'Fredoka One', cursive;
+  font-size: 2em;
+  white-space: pre-line;
+}
+
+#projects {
+  font-family: 'Fredoka One', cursive;
+  z-index: 1;
+  font-size: 1.5em;
+  display: grid;
+  justify-content: center;
+}
+
+.project-tile {
+  width: 10em;
+  margin: 0;
+  animation-name: slide; 
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+.project-img {
+  width: 10rem;
+  height: 10rem;
+  border: 1px solid black;
+  border-radius: 4%;
+  background: white;
+  filter: drop-shadow(5px 5px 2px gray);
+}
+
+.projects-grid {
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  position: relative;
+  vertical-align: middle;
+}  
 }
   
