@@ -3,8 +3,7 @@ body {
   text-align: center;
   height: auto;
   margin: 0; 
-  background-image: url("https://www.pixelstalk.net/wp-content/uploads/2016/11/Image-of-Calm.jpg");
-  background-attachment: fixed;
+  background: linear-gradient(#C4EEFF 30%, #F1C9F5 80%);
 }
 
 h1, h2 {
