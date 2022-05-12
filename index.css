@@ -111,7 +111,7 @@ p {
 .projects-grid {
   height: auto;
   display: grid;
-  grid-template-columns: 2fr 2fr 2fr;
+  grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
   position: relative;
   vertical-align: middle;
 }
